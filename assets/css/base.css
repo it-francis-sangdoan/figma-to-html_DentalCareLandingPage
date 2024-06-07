@@ -11,7 +11,33 @@ body {
     font-family: "Sora", sans-serif;
 }
 
+:root {
+    --bg-color: #10375C;
+}
+
 /* common */
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+.btn {
+    display: inline-block;
+    min-width: 205px;
+    line-height: 60px;
+    background: #2E80CE;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
