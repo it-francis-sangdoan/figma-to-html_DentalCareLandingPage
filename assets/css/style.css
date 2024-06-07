@@ -1,0 +1,55 @@
+/* header */
+.header {
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+.header-top {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .navbar__list {
+    display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+    padding: 8px 21px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 1.75; /* 175% */
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    position: relative;
+    top: -3px;
+    right: 8px;
+}
+
+.header__action--login {
+    margin-right: 7px;
+}
+
+.header__action--signup {
+    min-width: 104px;
+    line-height: 44px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
