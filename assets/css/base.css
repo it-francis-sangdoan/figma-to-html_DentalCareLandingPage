@@ -104,3 +104,8 @@ a {
 .control-icon--next {
     rotate: 180deg;
 }
+
+input,textarea,select,button {
+    font-family: inherit;
+    font-size: inherit;
+}
