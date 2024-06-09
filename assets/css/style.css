@@ -299,3 +299,24 @@
 .about__more {
     margin-top: 53px;
 }
+
+/* our team */
+.our-team {
+    padding: 85px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.meet_our_btn {
+    margin-top: 38px;
+}
+
+.team__list {
+    margin-top: 70px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
