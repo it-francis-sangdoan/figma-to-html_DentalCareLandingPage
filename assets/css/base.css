@@ -75,3 +75,32 @@ a {
 .service_btn {
     margin-top: 55px;
 }
+
+.control {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    color: #FFF;
+    border-color: #2E80CE;
+    background: #2E80CE;
+}
+
+.control-icon--next {
+    rotate: 180deg;
+}
