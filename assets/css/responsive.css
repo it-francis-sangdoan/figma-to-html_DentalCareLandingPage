@@ -1,11 +1,15 @@
 /* PC */
 
-@media(min-width: 992px) {}
+@media(min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
 
 
 /* Tablet & Mobile */
 
-@media(max-width: 768px) {
+@media(max-width: 991.98px) {
     .header-top {
         position: relative;
     }
@@ -31,18 +35,56 @@
         z-index: 1;
         opacity: 0;
         visibility: hidden;
+        transition: 0.5s;
     }
     /* check overlay */
     .menu-checkbox:checked~.menu-overlay {
         opacity: 1;
         visibility: visible;
     }
+    .menu-drawer {
+        position: fixed;
+        background-color: #2e1919;
+        inset: 0 40% 0 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        padding: 60px;
+    }
+    /* check checkbox*/
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+    .close__menu {
+        width: 24px;
+        color: #fff;
+    }
+    .menu-drawer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__list {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    #navbar__list--mobile {
+        margin-top: 25px;
+    }
+    .navbar__link {
+        display: block;
+        font-size: 2rem;
+    }
+    .navbar__link:hover {
+        background-color: #fff;
+        color: #000;
+    }
 }
 
 
 /* Tablet */
 
-@media(min-width: 768px) and (max-width: 768.98px) {}
+@media(min-width: 768px) and (max-width: 991.98px) {}
 
 
 /* Mobile */
