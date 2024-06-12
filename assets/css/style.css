@@ -163,14 +163,11 @@
     object-fit: cover;
 }
 
-.service__list {
-    margin-left: 130px;
-}
-
 .service-item {
     padding: 21px;
     display: flex;
     width: 470px;
+    border-radius: 10px;
     background: #FFF;
     transition: 0.25s;
 }
